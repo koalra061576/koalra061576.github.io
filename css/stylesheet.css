@@ -1,0 +1,80 @@
+@charset "UTF-8";
+@import url("./https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css");
+@import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
+
+/*본문스타일*/
+
+body {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 400;
+}
+
+
+/*레이아웃*/
+
+.wrapper {
+  background: silver;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header,
+.navigation,
+.main-content,
+.slogen,
+.footer,
+{
+  height: 150px;
+  width: 100px;
+}
+
+.header {
+  background: yellow;
+}
+
+.navigation {
+  background: pink;
+}
+
+.main-content {
+  background: blue;
+}
+
+.slogen {
+  background: orange;
+}
+
+.footer {
+  background: lime;
+}
+
+
+}
+
+/*모바일*/
+@media all and (max-width:999px) {
+  body {
+    background: yellow;
+  }
+}
+
+/*데스크탑*/
+@media all and (min-width:1000px) {
+  .wrapper {
+    align-content: center;
+  }
+  
+  .header,
+  .navigation,
+  .main-content,
+  .slogen,
+  .footer {
+    height: 150px;
+    width: 80px;
+  }
+  
+  body {
+    background: pink;
+  }
+}
